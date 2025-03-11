@@ -65,7 +65,7 @@ carbon_constrained_casefile(net, fuel_dict)
 #### Import Required Libraries
 ```julia
 # Import required libraries
-using PowerModels, HiGHS
+using PowerModels
 ```
 
 #### Load the PowerModels Network
