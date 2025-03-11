@@ -1,8 +1,8 @@
-function Carbon_constrained_casefile(file, fuel_dict)
-    Carbon_constrained_casefile(file, fuel_dict)
+function carbon_constrained_casefile(file, fuel_dict)
+    carbon_constrained_casefile(file, fuel_dict)
 end
 
-function Carbon_constrained_casefile(file, fuel_dict)
+function carbon_constrained_casefile(file, fuel_dict)
     # Lookup tables for CO2 and CO2e emissions
     fuel_lookup = Dict( #CO2 GCI
         "ANT" => 0.9095, #Anthracite Coal
