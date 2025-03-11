@@ -7,7 +7,9 @@ Pandapower.py
 
 ```python
 # This is a Python code cell in Jupyter Notebook style
-import numpy as np
+import pandapower as pp
+import pandapower.networks as pn
+import pandas as pd
 
 # Create an array
 arr = np.array([1, 2, 3, 4, 5])
