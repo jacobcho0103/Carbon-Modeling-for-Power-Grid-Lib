@@ -23,7 +23,7 @@ fuel_dict[12] = {"type": "ANT", "emissions": "CO2"}
 fuel_dict[22] = {"type": "BIT", "emissions": "CO2"}
 
 # Apply carbon constraints to the pandapower network
-carbon_constrained_casefile(net, fuel_dict)'''
+carbon_constrained_casefile(net, fuel_dict)```
 
 
 
