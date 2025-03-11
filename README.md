@@ -38,6 +38,24 @@ PowerModels.jl
 
 ```julia
 # Import require libraries
-import pandapower as pp
-import pandapower.networks as pn
-import pandas as pd
+using PowerModels, HiGHS
+```
+
+```julia
+# Load the Powermodels.jl network (assumed to be in MATPOWER format)
+# Example for case118
+net = PowerModels.parse_file("case118.m")
+```
+
+```julia
+# Generate the fuel dictionary
+fuel_dict=fuel_dict_generation(net)
+
+# Assign fuel types and emissions to specific generator buses
+fuel_dict[6] = Dict("type" => "GAS", "emissions" => "CO2e")
+fuel_dict[55] = Dict("type" => "ANT", "emissions" => "CO2")
+fuel_dict[110] = Dict("type" => "BIT", "emissions" => "CO2")
+
+# Apply carbon constraints to the powermodels network
+Carbon_constrained_casefile(net,fuel_dict)
+```
