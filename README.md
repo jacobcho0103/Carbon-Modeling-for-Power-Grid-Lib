@@ -100,12 +100,3 @@ This repository demonstrates how to incorporate carbon-aware constraints into po
 - **Julia (PowerModels.jl):** Designed for power system optimization, capable of solving complex optimization problems efficiently.
 
 By utilizing **fuel type assignments and carbon constraints**, this implementation enables more environmentally conscious power system planning and operations.
-
-## Future Enhancements
-- Implement more **carbon-aware constraints**, including dynamic carbon pricing.
-- Extend support to **multi-period OPF** for evaluating time-dependent emissions.
-- Compare **different solver performances** for optimization-based approaches.
-- Incorporate **renewable energy sources** and their emission impact.
-
-For any issues or contributions, feel free to submit a **pull request** or open an **issue** in the repository!
-
