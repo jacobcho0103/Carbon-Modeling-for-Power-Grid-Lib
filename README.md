@@ -1,4 +1,4 @@
-# Carbon Aware Casefile
+# Carbon-Aware Casefile
 
 This repository provides an implementation of carbon-aware power system modeling using **pandapower** in Python and **PowerModels.jl** in Julia. The goal is to incorporate carbon constraints into power system case files, assigning specific fuel types and their associated emissions to generator buses. This allows for the analysis of power system operations with environmental impact considerations.
 
