@@ -35,3 +35,9 @@ carbon_constrained_casefile(net, fuel_dict)
 
 ## Julia
 PowerModels.jl
+
+```julia
+# Import require libraries
+import pandapower as pp
+import pandapower.networks as pn
+import pandas as pd
