@@ -14,8 +14,11 @@ import pandas as pd
 
 ```python
 # Load the pandapower network (assumed to be in MATPOWER format)
+# Example for case30
 net = pn.case30() 
+```
 
+```python
 # Generate the fuel dictionary
 fuel_dict = fuel_dict_generation(net)
 
