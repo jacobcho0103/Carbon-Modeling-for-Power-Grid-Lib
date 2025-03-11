@@ -6,16 +6,26 @@ This repository contains a collection of components designed for reinforcement l
 Pandapower.py
 
 ```python
-# This is a Python code cell in Jupyter Notebook style
+# Import require libraries
 import pandapower as pp
 import pandapower.networks as pn
 import pandas as pd
 
-# Create an array
-arr = np.array([1, 2, 3, 4, 5])
+# Load the pandapower network (assumed to be in MATPOWER format)
+net = pn.case30() 
 
-# Display output
-arr
+# Generate the fuel dictionary
+fuel_dict = fuel_dict_generation(net)
+
+# Assign fuel types and emissions to specific generator buses
+fuel_dict[1] = {"type": "GAS", "emissions": "CO2e"}
+fuel_dict[12] = {"type": "ANT", "emissions": "CO2"}
+fuel_dict[22] = {"type": "BIT", "emissions": "CO2"}
+
+# Apply carbon constraints to the pandapower network
+carbon_constrained_casefile(net, fuel_dict)
+
+
 
 
 ## Julia
