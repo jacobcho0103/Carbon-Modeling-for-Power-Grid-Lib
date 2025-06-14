@@ -47,10 +47,10 @@ fuel_dict[22] = {"type": "BIT", "emissions": "CO2"}
 ```
 
 #### Apply Carbon Constraints
-The function `carbon_constrained_casefile()` is used to integrate carbon constraints into the power system model.
+The function `carbon_casefile()` is used to integrate carbon constraints into the power system model.
 ```python
 # Apply carbon constraints to the pandapower network
-carbon_constrained_casefile(net, fuel_dict)
+carbon_casefile(net, fuel_dict)
 ```
 
 ---
@@ -88,10 +88,10 @@ fuel_dict[110] = Dict("type" => "BIT", "emissions" => "CO2")
 ```
 
 #### Apply Carbon Constraints
-The function `carbon_constrained_casefile()` is used to integrate carbon constraints into the power system model.
+The function `carbon_casefile()` is used to integrate carbon constraints into the power system model.
 ```julia
 # Apply carbon constraints to the PowerModels network
-carbon_constrained_casefile(net, fuel_dict)
+carbon_casefile(net, fuel_dict)
 ```
 
 ## Summary
