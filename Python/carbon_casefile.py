@@ -1,4 +1,4 @@
-def carbon_constrained_casefile(net, fuel_dict):
+def carbon_casefile(net, fuel_dict):
     """
     Assigns GCI values to generators in the pandapower network based on fuel type and emission type.
     """
